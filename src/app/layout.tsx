@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./header";
 import Footer from "./footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 const julius = Julius_Sans_One({
   weight: ["400"], // Julius Sans One supporta solo il weight 400
@@ -35,6 +36,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <SpeedInsights/>
+        <Analytics />
       </body>
     </html>
   );
