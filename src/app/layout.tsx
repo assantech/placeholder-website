@@ -3,6 +3,7 @@ import { Julius_Sans_One, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./header";
 import Footer from "./footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const julius = Julius_Sans_One({
   weight: ["400"], // Julius Sans One supporta solo il weight 400
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <SpeedInsights/>
       </body>
     </html>
   );
